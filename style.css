@@ -1,0 +1,609 @@
+@charset "UTF-8";
+
+/* common */
+body, h1, h2, h3, h4, h5, h6, p, th, td, ol, ul, li, dl, dt, dd, form, pre {
+	margin: 0;
+	padding: 0;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 14px;
+	color: #333333;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+body {
+	min-width: 980px;
+	_display: inline;
+	_zoom: 1;
+}
+body {
+	background-color: #FFFFFF;
+	line-height: 22px;
+}
+.clearfix {
+	zoom: 1;
+}
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+a {
+	color: #299dc8;
+	text-decoration: none;
+}
+a:visited {
+	color: #006699;
+	text-decoration: none;
+}
+p {
+	margin-bottom: 10px;
+}
+img {
+	vertical-align: bottom;
+	border: none;
+}
+ul {
+	list-style:none;
+}
+/* contents */
+#header-area {
+	background: url(img/header.jpg) repeat-x top center;
+	height: 102px;
+	min-width: 980px;
+	border-bottom: solid 2px #ccc;
+}
+#header {
+	width: 980px;
+	height: 102px;
+	margin: 0 auto;
+	position: relative;
+}
+#header #logo {
+	width: 244px;
+	height: 64px;
+	position: absolute;
+	top: 18px;
+	left: 10px;
+}
+#header #logo a {
+	display: block;
+	height: 64px;
+	outline-style: none;
+	text-indent: -9999px;
+	background: url(img/logo.png) no-repeat;
+}
+#header-link-area {
+	position: absolute;
+	top: 22px;
+	left: 320px;
+}
+#header-link-area ul {
+	list-style: none;
+}
+#header-link-area ul li {
+	margin-bottom: 5px;
+}
+#header-ink {
+	width: 237px;
+	height: 52px;
+	position: absolute;
+	top: 22px;
+	left: 463px;
+}
+#header-tel {
+	position: absolute;
+	top: 44px;
+	right: 10px;
+}
+.header_tel_number {
+	position: absolute;
+	top: 0;
+	left: 40px;
+	font-size: 23px;
+	color: #5AADED;
+	line-height: 100%;
+	font-weight: bold;
+}
+#header-contact {
+	position: absolute;
+	top: 0px;
+	right: 12px;
+}
+#slide-area{
+	width:980px;
+	margin:0 auto;
+}
+#content {
+	position: relative;
+	height: 122px;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+#box {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+#globalNavi {
+	min-width: 1100px;
+	height: 122px;
+	transition: .3s;
+	background: url(img/navi-bg.png) repeat-x bottom;
+}
+#globalNavi ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 18px;
+	width: 980px;
+}
+#globalNavi li {
+	display: inline;
+	float: left;
+}
+#globalNavi a {
+	display: block;
+	height: 84px;
+	outline-style: none;
+	text-indent: -9999px;
+	background-position: 50%;
+	border-left: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+	box-sizing: border-box;
+}
+#globalNavi li:first-child a {
+	border-left: none;
+}
+#globalNavi li:last-child a {
+	border-right: none;
+}
+.globalNavi1 a {
+	width: 140px;
+	background: url(img/navi1.png) no-repeat;
+}
+.globalNavi2 a {
+	width: 140px;
+	background: url(img/navi2.png) no-repeat;
+}
+.globalNavi3 a {
+	width: 140px;
+	background: url(img/navi3.png) no-repeat;
+}
+.globalNavi4 a {
+	width: 140px;
+	background: url(img/navi4.png) no-repeat;
+}
+.globalNavi5 a {
+	width: 140px;
+	background: url(img/navi5.png) no-repeat;
+}
+.globalNavi6 a {
+	width: 140px;
+	background: url(img/navi6.png) no-repeat;
+}
+.globalNavi7 a {
+	width: 100px;
+	background: url(img/navi7.png) no-repeat;
+}
+.home #main {
+	min-width: 980px;
+	width: 980px;
+	margin: 46px auto 20px auto;
+}
+#contents {
+	width: 980px;
+	margin-right: 0px;
+}
+#p-banner-area {
+	margin-bottom: 30px;
+	width: 1005px;
+	margin-right: -25px;
+}
+.p-banner-box {
+	width: 310px;
+	height: 180px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+.p-banner-box .p-banner-img {
+	width: 310px;
+	height: 180px;
+	display: block;
+	position: relative;
+	-webkit-filter: blur(0px);
+}
+
+#point {
+	margin: 40px auto 40px;
+	width: 920px;
+}
+.point-box {
+	padding: 20px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	-moz-box-shadow: 2px 2px 3px #a0a0a0;
+	-webkit-box-shadow: 2px 2px 3px #a0a0a0;
+	margin-bottom: 30px;
+}
+.contentsBox {
+	padding: 0 10px;
+}
+#point h2 {
+	margin: 40px 0;
+}
+#point h3.lp2 {
+	font-size: 140%;
+}
+
+#point h3 {
+	line-height: 26px;
+	margin-bottom: 15px;
+	font-size: 110%;
+	padding: 0 0 0 15px;
+	color: #000000;
+	background: url(img/h3.gif) no-repeat 0 0;
+}
+.textBox {
+	padding: 0 50px 0 20px;
+}
+.imgCenter {
+	margin: 20px auto;
+	text-align: center;
+}
+.banner {
+	margin-bottom: 30px;
+	text-align: center;
+}
+#point h3.lp2-case {
+	line-height: 72px;
+	font-size: 160%;
+	color: #bfdde9;
+	padding: 3px 0 0 170px;
+	background: url(img/h3-case-lp2.png) no-repeat 0 0;
+	
+}
+.imgR {
+	float: right;
+	margin-left: 20px;
+}
+.pointText {
+	font-size: 115%;
+	padding: 0 50px 0 20px;
+	margin-bottom: 30px;
+}
+.pointNum {
+	float: left;
+	margin-right: 20px;
+}
+.contentsArea {
+	float: right;
+	width: 750px;
+}
+#point h2 {
+	margin: 40px 0;
+}
+#lineup {
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+.mb0 {
+	margin-bottom: 0 !important;
+}
+.modelL {
+	float: left;
+}
+.modelR, .modelL {
+	margin-top: 30px;
+	padding: 12px 0px 0px 20px;
+	height: 300px;
+	width: 450px;
+	background: url(img/specBg.png) no-repeat 0 0;
+}
+#lineup h3 {
+	color: #FFF;
+	font-size: 130%;
+	margin-top: 3px;
+	background: none;
+}
+#lineup p {
+	margin: 10px 0 0 0px;
+}
+#lineup p {
+	font-size: 110%;
+}
+#lineup h4 {
+	color: #e60012;
+	font-size: 118%;
+	margin: 10px 0;
+}
+.modelImage {
+	margin: 0;
+}
+.modelR {
+	float: right;
+}
+#flow h3 {
+	line-height: 82px;
+	padding: 3px 0 0 100px;
+	background: url(img/h3-flow.png) no-repeat 0 0;
+}
+#main .box3 {
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-bottom: 0;
+}
+#flow	ul li, #flow	ul li {
+	font-size: 90%;
+	margin-bottom: 5px;
+	color: #313131;
+	list-style: none;
+	padding: 0 0px 0 20px;
+	background: url(img/bullet.png) no-repeat 5px 5px;
+}
+.qa-box {
+	margin: 20px;
+	-moz-box-shadow: 2px 2px 3px #a0a0a0;
+	-webkit-box-shadow: 2px 2px 3px #a0a0a0;
+	background: url(img/qaBg.png) repeat;
+}
+.qaArea {
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.qtitle {
+	padding: 2px 0 0 50px;
+	line-height: 33px;
+	font-size: 130%;
+	color: #5aaded;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background: url(img/q.png) no-repeat 0 100%;
+}
+.aTitle {
+	float: left;
+	width: 35px;
+}
+p.ans {
+	line-height: 35px;
+	padding: 0 0 0 50px;
+}
+#mailform {
+	margin: 20px auto;
+	padding: 0;
+	width: 728px;
+}
+div#mfp_error {
+	background-color: #FEE;
+	border: solid 1px #F00;
+	padding: 10px;
+	display: none;
+}
+div#mfp_warning {
+	background-color: #FEE;
+	border: solid 1px #F00;
+	padding: 10px;
+	display: none;
+}
+div#mfp_phase_confirm {
+	clear: both;
+}
+form#mailformpro {
+	padding: 10px 0px;
+}
+div#mfp_hidden {
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0px;
+	margin: 0px;
+}
+div#mfp_hidden input {
+	margin: 10px;
+}
+form#mailformpro input, form#mailformpro textarea {
+	padding: 3px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+#mailform .formBox {
+	min-height: 1%;
+	width: 100%;
+}
+#mailform .conL {
+	width: 230px;
+	line-height: 22px;
+	float: left;
+	padding: 10px 0px 10px 10px;
+	font-size: 100%;
+	color: #FFF;
+	border-bottom: #FFF solid 1px;
+	background: #4fb7e3;
+}
+#mailform .conR {
+	float: left;
+	width: 438px;
+	padding: 10px 25px 10px 25px;
+	color: #505050;
+	border-bottom: #FFF solid 1px;
+	background-color: #eeeeee;
+	position: relative;
+	font-family: "メイリオ","Meiryo",arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+#mailform b {
+	color: #535353;
+}
+#mailform .con {
+	height: 20px;
+	padding: 0 0 0px 0;
+	border: 1px solid #c9c9c9;
+	font-size: 105%;
+	color: #505050;
+}
+form#mailformpro input, form#mailformpro textarea {
+	padding: 3px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+div.mfp_err {
+	clear: both;
+	display: none !important;
+	text-align: left;
+	margin: 5px 0px 0px 0px;
+	padding: 3px 0px 5px 17px;
+	color: #F00;
+	font-size: 12px;
+	line-height: normal;
+	background-image: url(img/mfp_error.png);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+#mailform .messL {
+	width: 230px;
+	height: 202px;
+	float: left;
+	padding: 10px 0px 10px 10px;
+	font-size: 110%;
+	color: #505050;
+	background-color: #EBEAE4;
+}
+#submit {
+	margin: 20px auto;
+	text-align: center;
+}
+.wpcf7-submit {
+	border: 0px;
+	width: 100px;
+	height: 30px;
+	background: url(img/conB.png) 0 0px no-repeat;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.wpcf7-submit:hover {
+	background: url(img/conB.png)0 -30px no-repeat;
+}
+#pageTop {
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(img/pagetop2.png);
+	overflow: hidden;
+}
+#pageTop:hover {
+	opacity: 0.8;
+}
+#pageTop a {
+	display: block;
+	padding: 70px;
+}
+#mailform .mess {
+	height: 194px !important;
+	width: 100% !important;
+	border: 1px solid #c9c9c9;
+	font-size: 105%;
+	color: #505050;
+	align: left;
+	overflow-y: auto;
+	_overflow-y: hidden;
+}
+#mailform .high2 {
+	height: 102px;
+}
+form#mailformpro label.mfp_not_checked {
+	padding: 3px;
+	border: solid 1px #EEE;
+}
+form#mailformpro label {
+	border-radius: 3px;
+	margin: 3px;
+	display: block;
+}
+form#mailformpro label {
+	font-size: 90%;
+}
+div#contact {
+	position: relative;
+}
+#footerUpper .inner {
+	background: url(img/footerBorder.png) repeat-y;
+	margin: 0 auto;
+	width: 960px;
+}
+#footerUpper {
+	font-size: 90%;
+	clear: both;
+	padding: 20px 0;
+	border-bottom: 1px solid #5d5c5c;
+	overflow: hidden;
+	background: url(img/footerUpper.png) repeat-x;
+	background-position: top;
+}
+#footerUpper .inner {
+	background: url(img/footerBorder.png) repeat-y;
+	margin: 0 auto;
+	width: 960px;
+}
+#footerUpper .inner .box {
+	float: left;
+	width: 200px;
+	padding-left: 10px;
+	margin: 20px 20px 10px 10px;
+	line-height: 1.2;
+}
+#footerUpper a {
+	color: #727171;
+}
+#container ul li, #footerUpper ul li {
+	font-size: 90%;
+	margin-bottom: 5px;
+	color: #313131;
+	list-style: none;
+	padding: 0 0px 0 20px;
+	background: url(img/bullet.png) no-repeat 5px 5px;
+}
+#footerLower {
+	clear: both;
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid #a0a0a0;
+	background: #707070;
+}
+address {
+	color: #fff;
+	font-style: normal;
+	font-size: 13px;
+}
+
+
+	
+	
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 150px;
+  height: 190px;
+  background: url(img/2.png) no-repeat;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s; }
+
+.pagetop:hover {
+  opacity: 0.8; }
